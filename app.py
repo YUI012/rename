@@ -16,4 +16,4 @@ def try_c():
     img.save(qr_route)
     return render_template('try_o.html',msg=msg,qr_name=str(name)+'.png',qr_route=qr_route)
 if __name__=='__main__':
-    app.run(host='0.0.0.0')
+    app.run()
