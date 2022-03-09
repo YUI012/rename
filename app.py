@@ -8,7 +8,7 @@ app=Flask(__name__)
 @app.route('/')
 def index():
     shutil.rmtree('static')
-    os.mkdir('static')
+    os.makedir('static')
     return render_template('try_c.html')
 
 @app.route('/try',methods=['POST'])
