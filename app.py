@@ -1,6 +1,7 @@
 from flask import Flask,request
 from flask import render_template,redirect
 import qrcode
+from PIL import Image
 
 app=Flask(__name__)
 
