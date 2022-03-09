@@ -1,4 +1,3 @@
-from django.shortcuts import redirect
 from flask import Flask,request,render_template,redirect
 import qrcode
 import os
