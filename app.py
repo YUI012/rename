@@ -2,11 +2,15 @@ from flask import Flask,request
 from flask import render_template,redirect
 import qrcode
 from PIL import Image
+import os
+import shutil
 
 app=Flask(__name__)
 
 @app.route('/')
 def index():
+    shutil.rmtree('static')
+    os.mkdir('static')
     return render_template('try_c.html')
 
 @app.route('/try',methods=['POST'])

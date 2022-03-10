@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <title>URL→QRcode</title>
+</head>
+<body>
+    <h1>URL→QRコード</h1>
+    <form action="/try" method="POST" class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>A Stacked Form</legend>
+            <label>URL</label>
+            <input type="text" name="try_c" placeholder="URL"required>
+            <span class="pure-form-message">This is a required field.</span>
+            <label>保存名</label>
+            <input type="text"name="try_n" placeholder="保存名" required>
+            <span class="pure-form-message">This is a required field.</span>
+            <button type="submit" class="pure-button pure-button-primary">送信</button>
+        </fieldset>
+        <table>
+            <td><input type="text" name="try_c" placeholder="URL"required></td>
+            <td><input type="text"name="try_n" placeholder="保存名" required></td>
+        </table>
+        <button type="submit">送信する</button>
+    </form>
+</body>
+</html>
